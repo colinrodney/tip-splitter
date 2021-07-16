@@ -1,0 +1,27 @@
+/* CONFIRMED STYLESHEET ATTACHED! */
+
+body {
+  background: #f1f1f1;
+  color: #424246;
+}
+
+.app-title {
+  background: #bbb6b6;
+  color: #424246;
+}
+
+.app-title > section {
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn {
+  display: block;
+}
+
+/* testing */
+.tip-display-row {
+  background: lightslategray;
+  color: #fff;
+  padding: 1rem;
+}

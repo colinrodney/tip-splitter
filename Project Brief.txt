@@ -1,0 +1,61 @@
+INPUT FIELDS:
+
+- captured via DOM - querySelectorAll('input') [captures ALL input fields]
+
+> values to be captured based on input field index position.
+
+INPUT[0] = billAmount
+INPUT[1] = Number of People
+
+
+PERCENTAGE BUTTONS:
+querySelectorAll('.percentage-button') [captures ALL buttons w/ class 'percentage-button]
+
+> values to be captured based on button index position + specified percentage value (5%, 10% etc)...
+
+SPAN ELEMENTS
+SPAN[0] --> Shows tip amount per person
+SPAN[1] --> Shows TOTAL amout to be paid by each person based
+on the value entered to the number of people field.
+
+
+
+NEXT TASK:
+
+-button click captures value from bill amount field [DONE]
+
+- Figure out how to attach a numeric value to the buttons for calculation. [use attribute value, captured as text so make sure to convert this value to a NUMBER!] > In Javascript we can log the value of the button by using the .value method just as we would when we are capturing a value from an input field. NOTE: user captured values are always captured as text and the value of the button when submitted will be submitted as text. it is IMPORTANT to convert ALL values to be used in calculations to numbers otherwise they WILL NOT WORK!
+[DONE]
+
+- Multiply button value times billAmount value
+    - This gives the amount of tip based on the bill amount[DONE]
+    - This needs to be displayed @ span[0] in bottom section.
+
+    - Begin work on "Number of People" Calculations:
+        1. Grab calculated tip amount based on bill amount.
+
+        2. Grab value in "Number of People" input field. (use keyup event)
+            -@keyup event - variable 'totalTip' is to be divided by the value captured by keyup event @ the "Number of People" input field. The calculated value is to be displayed @ span[0] (Tip Amout per person) [DONE]
+
+        3. Divide the calculated tip amount by value collected @ "Number of People" input field. This gives the amount of tip each person in the party should pay on their part of the check to meet the gratuity requirement. [DONE??]
+
+- Prep to show the TOTAL amout to be paid by each person based on bill amount and suggested amount of the tip for each person.
+    1. Grab bill amount value   
+        - Divide the billa mount value by the value entered in the 
+        "number of people field" 
+            - Result: TOTAL Amount needed to be paid by each person based on the value entered in the "number of people" field & the bill amount. 
+
+
+***SIDE NOTES:
+> Consider a loop to asign index values @ percentage buttons to
+reduce amt of code needed. (Refactor stage)
+
+> CONSIDER USING KEYUP EVENT TO CAPTURE INPUT @ Number of People Field to trigger operations
+
+> We need to start passing values between functions to get this thing to work PROPERLY!!!
+
+    - We are going to need some 'helper functions'
+        1. function to grab input field value(s)
+        2. function to calculate total tip amount based on total bill amount. ????
+
+> Start thinking about how people can break your app and work to control these factors. For example, numbers only are to be entered into the input fields. What happens if a user enters a letter or some other character that is NOT a number?
