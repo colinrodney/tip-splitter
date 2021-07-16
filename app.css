@@ -22,7 +22,7 @@ body {
 /* testing */
 .tip-display-wrapper {
   background: lightslategray;
-  color: #fff;
+  color: #000;
   padding: 1rem;
   /* border-radius: 10px; */
 }
