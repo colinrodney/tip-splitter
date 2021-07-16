@@ -51,6 +51,7 @@
       <!-- BILL LABEL -->
       <!-- DO SOMETHING W/ THE SPANS?? -->
       <div class="wrapper">
+        <div class="container"></div>
         <div class="row bill-row mt-4">
           <div class="col-12">
             <label for="Bill" class="form-label">Bill</label>
@@ -145,25 +146,27 @@
         </div>
       </div>
       <!-- TIP DISPLAY SECTION -->
-      <div class="row tip-display-row mt-4">
-        <div class="col-6 mb-4">
-          <p>Tip Amount</p>
-          <small class="per-person">/ person</small>
-        </div>
-        <div class="col-6 mb-4">
-          <span class="display" id="showTipPerPerson">Lorem, ipsum.</span>
-        </div>
-        <div class="row tip-display-row mt-2">
+      <div class="tip-display-wrapper">
+        <div class="row tip-display-row mt-4">
           <div class="col-6 mb-4">
-            <p>Total</p>
+            <p>Tip Amount</p>
             <small class="per-person">/ person</small>
           </div>
           <div class="col-6 mb-4">
-            <span class="display" id="showTotalPerPerson">Lorem, ipsum.</span>
+            <span class="display" id="showTipPerPerson">Lorem, ipsum.</span>
           </div>
+          <div class="row tip-display-row mt-2">
+            <div class="col-6 mb-4">
+              <p>Total</p>
+              <small class="per-person">/ person</small>
+            </div>
+            <div class="col-6 mb-4">
+              <span class="display" id="showTotalPerPerson">Lorem, ipsum.</span>
+            </div>
+          </div>
+          <!-- call to action button -->
+          <button type="button" class="btn btn-primary">Reset</button>
         </div>
-        <!-- call to action button -->
-        <button type="button" class="btn btn-primary">Reset</button>
       </div>
     </div>
 

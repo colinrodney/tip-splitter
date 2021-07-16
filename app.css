@@ -20,8 +20,9 @@ body {
 }
 
 /* testing */
-.tip-display-row {
+.tip-display-wrapper {
   background: lightslategray;
   color: #fff;
   padding: 1rem;
+  /* border-radius: 10px; */
 }
