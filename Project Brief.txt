@@ -59,3 +59,8 @@ reduce amt of code needed. (Refactor stage)
         2. function to calculate total tip amount based on total bill amount. ????
 
 > Start thinking about how people can break your app and work to control these factors. For example, numbers only are to be entered into the input fields. What happens if a user enters a letter or some other character that is NOT a number?
+
+
+GIT INFO:
+repo name: https://github.com/colinrodney/tip-splitter
+site address: https://colinrodney.github.io/tip-splitter/
