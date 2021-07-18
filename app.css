@@ -1,35 +1,25 @@
-/* CONFIRMED STYLESHEET ATTACHED! */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background: hsl(189, 41%, 97%);
-  color: #424246;
+  background: #d4d9dd;
 }
 
-.app-title {
-  /* background: #bbb6b6; */
-  color: #424246;
+.main-content {
+  background: #f1f1f1;
 }
 
-.bill-wrapper {
-  background: #fff;
-  border-radius: 10px 10px 0 0;
-}
-
-.app-title > section {
-  text-align: center;
+#bill {
+  border: 2px solid red;
   padding: 1rem;
 }
 
-.btn {
-  display: block;
-}
-
-/* testing */
-.tip-display-wrapper {
-  background: #fff;
-  padding: 1.5rem;
-  /* border-radius: 10px; */
-}
-row.tip-display {
-  background: lightgray;
+#number-of-people {
+  border: 2px solid purple;
+  background: #424246;
+  color: #f1f1f1;
+  padding: 1rem;
 }

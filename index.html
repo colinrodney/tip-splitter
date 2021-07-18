@@ -26,7 +26,7 @@
     <!-- local css stylesheet -->
     <link rel="stylesheet" href="app.css" />
 
-    <title>Frontend Mentor | Tip calculator app</title>
+    <title>REDESIGN | Tip calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <!-- <style>
@@ -39,94 +39,77 @@
       }
     </style> -->
   </head>
+  <!-- CORRECTED LAYOUT -->
   <body>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row app-title">
-          <div class="col-12">
-            <section>
-              <p class="lead text-center py-3">Splitter</p>
-            </section>
-          </div>
-        </div>
-        <!-- BILL LABEL -->
-        <!-- DO SOMETHING W/ THE SPANS?? -->
-        <div class="bill-wrapper">
-          <div class="container"></div>
-          <div class="row bill-row mt-4">
-            <div class="col-12">
-              <label for="Bill" class="form-label">Bill</label>
-              <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input
-                  type="text"
-                  class="bill-amount form-control"
-                  aria-label="bill amount"
-                  placeholder="total bill amount"
-                />
-                <!-- <span class="input-group-text">.00</span> -->
-              </div>
+    <h1>APP TITLE</h1>
+    <main class="container main-content mt-3">
+      <!-- BOX-1 [Bill Amount + Select Tip] -->
+      <div class="row">
+        <div class="col-md-6">
+          <section id="bill">
+            <label for="Bill" class="form-label">Bill</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input
+                type="text"
+                class="bill-amount form-control"
+                aria-label="bill amount"
+                placeholder="total bill amount"
+              />
+              <!-- <span class="input-group-text">.00</span> -->
             </div>
-          </div>
-
-          <div class="row mt-4">
             <p>Select Tip %</p>
-          </div>
-          <!-- PERCENTAGE BUTTONS -->
-          <!-- <div class="wrapper"> -->
-          <div class="row">
-            <div class="col-6">
-              <!-- testing -->
-              <button
-                value=".05"
-                type="submit"
-                class="percentage-button btn btn-primary col-12 mb-2"
-              >
-                5%
-              </button>
-              <button
-                value=".15"
-                type="submit"
-                class="percentage-button btn btn-primary col-12 mb-2"
-              >
-                15%
-              </button>
-              <button
-                value=".50"
-                type="submit"
-                class="percentage-button btn btn-primary col-12 mb-2"
-              >
-                50%
-              </button>
-            </div>
-            <div class="col-6">
-              <button
-                value=".10"
-                type="button"
-                class="percentage-button btn btn-primary col-12 mb-2"
-              >
-                10%
-              </button>
-              <button
-                value=".25"
-                type="button"
-                class="percentage-button btn btn-primary col-12 mb-2"
-              >
-                25%
-              </button>
-              <!-- ADDRESS CUSTOM TIP PERCENTAGE BUTTON! -->
-              <button
-                value=".00"
-                type="button"
-                class="percentage-button btn btn-primary col-12 mb-2"
-              >
-                Custom
-              </button>
-            </div>
-          </div>
-          <!-- NUMBER OF PEOPLE LABEL -->
-          <div class="row mt-4">
-            <div class="col-12">
+            <!-- PERCENTAGE BUTTONS -->
+            
+            <div class="row">
+              <div class="col-md-6">
+                <!-- testing -->
+                <button
+                  value=".05"
+                  type="submit"
+                  class="percentage-button btn btn-primary col-12 mb-2"
+                >
+                  5%
+                </button>
+                <button
+                  value=".15"
+                  type="submit"
+                  class="percentage-button btn btn-primary col-12 mb-2"
+                >
+                  15%
+                </button>
+                <button
+                  value=".50"
+                  type="submit"
+                  class="percentage-button btn btn-primary col-12 mb-2"
+                >
+                  50%
+                </button>
+              </div>
+              <div class="col-md-6">
+                <button
+                  value=".10"
+                  type="button"
+                  class="percentage-button btn btn-primary col-12 mb-2"
+                >
+                  10%
+                </button>
+                <button
+                  value=".25"
+                  type="button"
+                  class="percentage-button btn btn-primary col-12 mb-2"
+                >
+                  25%
+                </button>
+                <!-- ADDRESS CUSTOM TIP PERCENTAGE BUTTON! -->
+                <button
+                  value=".00"
+                  type="button"
+                  class="percentage-button btn btn-primary col-12 mb-2"
+                >
+                  Custom
+                </button>
+              </div>
               <label for="Number of People" class="form-label"
                 >Number of People</label
               >
@@ -142,36 +125,54 @@
                 <!-- <span class="input-group-text">.00</span> -->
               </div>
             </div>
-          </div>
+          </section>
         </div>
-        <!-- TIP DISPLAY SECTION -->
-        <div class="tip-display-wrapper">
-          <div class="row tip-display-row mt-4">
-            <div class="col-6 mb-4">
-              <p>Tip Amount</p>
-              <small class="per-person">/ person</small>
-            </div>
-            <div class="col-6 mb-4">
-              <span class="display" id="showTipPerPerson">Lorem, ipsum.</span>
-            </div>
-            <div class="row tip-display-row mt-2">
-              <div class="col-6 mb-4">
-                <p>Total</p>
-                <small class="per-person">/ person</small>
+        
+        <!-- BOX-2 [Number of People + Display Totals + Call-to-Action (Reset Button)] -->
+        <div class="col-md-6">
+          <div class="wrapper">
+            <section id="number-of-people">
+              <!-- INSERT TIP DISPLAY SECTION -->
+              <div class="tip-display-wrapper">
+                <div class="row tip-display-row mt-4">
+                  <div class="col-6 mb-4">
+                    <p>Tip Amount</p>
+                    <small class="per-person">/ person</small>
+                 </div>
+                <div class="col-6 mb-4">
+                  <span class="display" id="showTipPerPerson">Lorem, ipsum.</span>
+                </div>
+                <div class="row tip-display-row mt-2">
+                  <div class="col-6 mb-4">
+                    <p>Total</p>
+                    <small class="per-person">/ person</small>
+                  </div>
+                  <div class="col-6 mb-4">
+                    <span class="display" id="showTotalPerPerson"
+                      >Lorem, ipsum.</span
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="col-6 mb-4">
-                <span class="display" id="showTotalPerPerson"
-                  >Lorem, ipsum.</span
-                >
-              </div>
-            </div>
             <!-- call to action button -->
             <button type="button" class="btn btn-primary">Reset</button>
           </div>
         </div>
-      </div>
-    </div>
 
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- END CORRECTED LAYOUT  -->
+
+    
+
+         
+          
+         
+        <!-- TIP DISPLAY SECTION -->
+        
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
