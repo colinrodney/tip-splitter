@@ -19,7 +19,14 @@ body {
 
 #number-of-people {
   border: 2px solid purple;
-  background: #424246;
+  /* background: #424246; */
   color: #f1f1f1;
   padding: 1rem;
+}
+
+.tip-display-wrapper {
+  background: #d6d5d5;
+  color: #000;
+  padding: 1rem;
+  border-radius: 20px;
 }
