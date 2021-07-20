@@ -77,6 +77,13 @@ reduce amt of code needed. (Refactor stage)
 
                     - @ medium screens ( >= 768px) each of the two columns are reduced to taking 6 columns each. This allows for transitioning from a stacked column mobile layout to a side-by-side desktop layout.
 
+7/20/21:
+    All styling/ display issues @ mobile and @ larger screens have been resolved.
+        - Percentage Buttons layout issues = resolved:
+            > Problem: @ larger screens, buttons were not properly breaking into 3 column containing two (2) buttons each.
+
+            > Resolution: Used "row-cols*" class @ parent element (class="row row-cols*"). This allows parent element to control the number of columns displayed based on the screen size. Each of the buttons has been placed in a separate <div class="col"></div> to allow the parent element (the element with class="row row-cols-*") to manage the number of columns @ screen. 
+
 
 GIT INFO:
 repo name: https://github.com/colinrodney/tip-splitter
