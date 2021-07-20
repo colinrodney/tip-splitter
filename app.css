@@ -5,11 +5,14 @@
 }
 
 body {
-  background: #d4d9dd;
+  /* background: #d4d9dd; */
+  background: hsl(185, 41%, 84%);
 }
 
+/* main container */
 .main-content {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background: hsl(0, 0%, 100%);
 }
 
 #bill {
@@ -26,7 +29,9 @@ body {
 
 .tip-display-wrapper {
   background: #d6d5d5;
-  color: #000;
+  background: hsl(183, 100%, 15%);
+  /* color: #000; */
+  color: hsl(189, 41%, 97%);
   padding: 1rem;
   border-radius: 20px;
 }

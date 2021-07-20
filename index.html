@@ -41,7 +41,7 @@
   </head>
   <!-- CORRECTED LAYOUT -->
   <body>
-    <h1>APP TITLE</h1>
+    <h1 class="text-center mt-5 mb-5">APP TITLE</h1>
     <main class="container main-content mt-3">
       <!-- BOX-1 [Bill Amount + Select Tip] -->
       <div class="row">
@@ -59,12 +59,11 @@
               <!-- <span class="input-group-text">.00</span> -->
             </div>
             <!-- PERCENTAGE BUTTONS -->
-            
-            <p>Select Tip %</p>
+            <div class="row">
+              <p>Select Tip %</p>
+            </div>
             <div class="row row-cols-2 row-cols-md-3">
-              <!-- BUTTONS: COL 1 -->
               <div class="col">
-                <!-- testing -->
                 <button
                   value=".05"
                   type="submit"
@@ -72,13 +71,16 @@
                 >
                   5%
                 </button>
-                <button
+              </div>
+              <div class="col"> <button
                   value=".15"
                   type="submit"
                   class="percentage-button btn btn-primary col-12 mb-2"
                 >
                 15%
                 </button>
+              </div>
+              <div class="col">
                 <button
                   value=".25"
                   type="button"
@@ -87,8 +89,6 @@
                   25%
                 </button>
               </div>
-
-              <!-- BUTTONS Col 2 -->
               <div class="col">
                 <button
                   value=".10"
@@ -97,63 +97,50 @@
                 >
                   10%
                 </button>
-                <button
+              </div>
+              <div class="col">
+                 <button
                   value=".00"
                   type="button"
                   class="percentage-button btn btn-primary col-12 mb-2"
                 >
                   Custom
                 </button>
+              </div>
+              <div class="col">
                 <button
-                  value=".25"
+                  value=".50"
                   type="button"
                   class="percentage-button btn btn-primary col-12 mb-2"
-                >
-                  25%
+                > 50%
                 </button>
               </div>
-              <!-- NUMBER OF PEOPLE LABEL -->
-              <label for="Number of People" class="form-label"
-                >Number of People</label>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="num-people form-control"
-                  aria-label="Amount (to the nearest dollar)"
-                />
-              </div>
             </div>
+
+              
+            <!-- NUMBER OF PEOPLE LABEL -->
+            <label for="Number of People" class="form-label"
+              >Number of People</label>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="num-people form-control"
+                aria-label="Amount (to the nearest dollar)"
+              />
+            </div>
+            
           </section>
         </div>
-
-        <!-- KEEP THIS!! -->
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-               <label for="Number of People" class="form-label"
-                  >Number of People</label>
-                <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="num-people form-control"
-                    aria-label="Amount (to the nearest dollar)"
-                  />
-                </div>
-            </div>
-          </div>
-        </div> -->
-
-        
         <!-- BOX-2 [Number of People + Display Totals + Call-to-Action (Reset Button)] -->
         <div class="col-md-6">
           <section id="number-of-people" class="h-100 mt-1">
-            <!-- INSERT TIP DISPLAY SECTION -->
+            <!-- TIP DISPLAY SECTION -->
             <div class="tip-display-wrapper">
               <div class="row tip-display-row mt-4">
                 <div class="col-6 mb-4">
                   <p>Tip Amount</p>
                   <small class="per-person">/ person</small>
-               </div>
+                </div>
               <div class="col-6 mb-4">
                 <span class="display" id="showTipPerPerson">Lorem, ipsum.</span>
               </div>
@@ -173,21 +160,16 @@
             <button type="button" class="btn btn-primary mt-5 col-md-12">Reset</button>
           </section>
         </div>
+      </div>
     </main>
     <!-- END CORRECTED LAYOUT  -->
 
-    
-
-         
-          
-         
-        <!-- TIP DISPLAY SECTION -->
-        
-    <div class="attribution">
+    <!-- ATTRIBUTES-->
+    <div class="attribution text-center mt-5">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">C. Renauld Rodney</a>.
+      >. Coded by <a href="https://colinrodney.netlify.app" target="_blank">C. Renauld Rodney</a>.
     </div>
 
     <script src="app.js"></script>
