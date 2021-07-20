@@ -60,6 +60,23 @@ reduce amt of code needed. (Refactor stage)
 
 > Start thinking about how people can break your app and work to control these factors. For example, numbers only are to be entered into the input fields. What happens if a user enters a letter or some other character that is NOT a number?
 
+7-18-21:
+- Had to rework layout using bootstrap.
+    - Mobile layout = ok
+    - Desktop layout = not ok
+        - Issue: @ 768 and larger screens the layout was NOT transitioning from mobile > desktop.
+
+        -Resolution: Reworked HTML as follows:
+            -Body will serve as main backdrop of app containg an h1 w/ the application name.
+
+            - Main content area will take have bootstrap container class for centering purposes and to allow for easy addition of the border-radius.
+
+                - This container will have one (1) row and two (2) columns that will behave as follows:
+
+                    - @ small (mobile) screens both columns will take 100% screen width (12 columns)
+
+                    - @ medium screens ( >= 768px) each of the two columns are reduced to taking 6 columns each. This allows for transitioning from a stacked column mobile layout to a side-by-side desktop layout.
+
 
 GIT INFO:
 repo name: https://github.com/colinrodney/tip-splitter
