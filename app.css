@@ -1,28 +1,37 @@
-/* CONFIRMED STYLESHEET ATTACHED! */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background: #f1f1f1;
-  color: #424246;
+  /* background: #d4d9dd; */
+  background: hsl(185, 41%, 84%);
 }
 
-.app-title {
-  background: #bbb6b6;
-  color: #424246;
+/* main container */
+.main-content {
+  /* background: #f1f1f1; */
+  background: hsl(0, 0%, 100%);
 }
 
-.app-title > section {
-  text-align: center;
+#bill {
+  border: 2px solid red;
   padding: 1rem;
 }
 
-.btn {
-  display: block;
+#number-of-people {
+  border: 2px solid purple;
+  /* background: #424246; */
+  color: #f1f1f1;
+  padding: 1rem;
 }
 
-/* testing */
 .tip-display-wrapper {
-  background: lightslategray;
-  color: #000;
+  background: #d6d5d5;
+  background: hsl(183, 100%, 15%);
+  /* color: #000; */
+  color: hsl(189, 41%, 97%);
   padding: 1rem;
-  /* border-radius: 10px; */
+  border-radius: 20px;
 }
