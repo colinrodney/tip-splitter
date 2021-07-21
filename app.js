@@ -19,6 +19,7 @@ let customTipValue = customTipInput.value;
 // document.body.appendChild(customTip);
 
 let tip; // NOW HAS GLOBAL SCOPE
+console.log("tip is " + tip);
 let billAmount; // GLOBAL SCOPE
 
 // BUTTON EVENT LISTNERS
@@ -84,7 +85,7 @@ INPUT[1].addEventListener("keyup", function () {
   SPAN[0].innerText = tipPerPerson.toFixed(2);
 
   // Show TOTAL amount to be paid by each person
-  let totalPerPerson = billAmount / 3 + tipPerPerson;
+  let totalPerPerson = billAmount / Number(INPUT[1].value) + tipPerPerson;
   // console.log(totalPerPerson.toFixed(2));
   SPAN[1].innerText = totalPerPerson.toFixed(2);
 });
