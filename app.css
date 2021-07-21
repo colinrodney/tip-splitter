@@ -12,8 +12,7 @@ body {
 
 /* main container */
 .main-content {
-  /* background: #f1f1f1; */
-  background: hsl(0, 0%, 100%);
+  background: hsl(189, 41%, 97%);
 }
 
 #bill {
@@ -41,6 +40,10 @@ body {
 .percentage-button {
   background: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
+}
+
+.reset-btn {
+  background: hsl(170deg 65% 41%);
 }
 
 /* display spans */
