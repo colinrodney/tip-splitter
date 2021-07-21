@@ -83,6 +83,8 @@ reduce amt of code needed. (Refactor stage)
             > Problem: @ larger screens, buttons were not properly breaking into 3 column containing two (2) buttons each.
 
             > Resolution: Used "row-cols*" class @ parent element (class="row row-cols*"). This allows parent element to control the number of columns displayed based on the screen size. Each of the buttons has been placed in a separate <div class="col"></div> to allow the parent element (the element with class="row row-cols-*") to manage the number of columns @ screen. 
+    
+    > Begin work on "custom" tip amount button.
 
 
 GIT INFO:
