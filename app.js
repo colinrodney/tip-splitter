@@ -7,6 +7,12 @@ console.log(INPUT[1]); // Number of People
 
 // DOM ELEMENTS - buttons [all buttons]
 const PERCENTAGE = document.querySelectorAll(".percentage-button");
+const RESET = document.querySelector(".reset-btn");
+
+// RESET.addEventListener("click", function () {
+//   console.log("reset button triggered");
+// });
+console.log("RESET BUTTON", RESET);
 console.log(PERCENTAGE);
 
 // DOM ELEMENT - span[all spans]
@@ -88,4 +94,10 @@ INPUT[1].addEventListener("keyup", function () {
   let totalPerPerson = billAmount / Number(INPUT[1].value) + tipPerPerson;
   // console.log(totalPerPerson.toFixed(2));
   SPAN[1].innerText = totalPerPerson.toFixed(2);
+});
+
+// RESET BUTTON
+RESET.addEventListener("click", function () {
+  console.log("reset button triggered");
+  location.reload(); //reload page
 });
