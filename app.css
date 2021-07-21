@@ -7,6 +7,7 @@
 body {
   /* background: #d4d9dd; */
   background: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
 }
 
 /* main container */
@@ -34,4 +35,16 @@ body {
   color: hsl(189, 41%, 97%);
   padding: 1rem;
   border-radius: 20px;
+}
+
+/* percentage buttons */
+.percentage-button {
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* display spans */
+.display {
+  color: hsl(169, 55%, 62%, 1);
+  font-size: 1.5rem;
 }
