@@ -13,6 +13,7 @@ body {
 /* main container */
 .main-content {
   background: hsl(189, 41%, 97%);
+  border-radius: 20px;
 }
 
 /* input fields (class="form-control") */
