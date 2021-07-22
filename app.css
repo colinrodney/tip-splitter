@@ -15,6 +15,11 @@ body {
   background: hsl(189, 41%, 97%);
 }
 
+/* input fields (class="form-control") */
+.form-control {
+  background: hsl(186, 41%, 97%);
+}
+
 #bill {
   border: 2px solid red;
   padding: 1rem;
@@ -52,8 +57,19 @@ body {
   color: hsl(183, 100%, 15%);
 }
 
+/* reset button */
 .reset-btn {
   background: hsl(175deg 65% 41%);
+  color: hsl(183, 100%, 15%);
+  /* display: block;
+  margin: 0 auto; */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.reset-btn:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(184, 14%, 43%);
 }
 
 /* display spans */
