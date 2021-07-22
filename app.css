@@ -7,12 +7,23 @@
 body {
   /* background: #d4d9dd; */
   background: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
 }
 
 /* main container */
 .main-content {
-  /* background: #f1f1f1; */
-  background: hsl(0, 0%, 100%);
+  background: hsl(189, 41%, 97%);
+  border-radius: 20px;
+}
+
+/* input fields (class="form-control") */
+.form-control {
+  background: hsl(186, 41%, 97%);
+}
+
+/* .section-name (labels + paragraph elements) */
+.section-name {
+  color: hsl(185, 14%, 56%);
 }
 
 #bill {
@@ -34,4 +45,45 @@ body {
   color: hsl(189, 41%, 97%);
   padding: 1rem;
   border-radius: 20px;
+}
+
+small {
+  color: hsl(185, 41%, 84%);
+}
+
+/* percentage buttons */
+.percentage-button {
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+
+.percentage-button:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+.percentage-button:focus {
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* reset button */
+.reset-btn {
+  background: hsl(175deg 65% 41%);
+  color: hsl(183, 100%, 15%);
+  /* display: block;
+  margin: 0 auto; */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.reset-btn:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(184, 14%, 43%);
+}
+
+/* display spans */
+.display {
+  color: hsl(169, 55%, 62%, 1);
+  font-size: 1.5rem;
 }

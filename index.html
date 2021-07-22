@@ -15,6 +15,11 @@
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" /> -->
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
     <!-- bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -47,20 +52,23 @@
       <div class="row">
         <div class="col-md-6">
           <section id="bill">
-            <label for="Bill" class="form-label">Bill</label>
-            <div class="input-group mb-3">
+            <label for="Bill" class="section-name form-label">Bill</label>
+            <div class="input-group mb-4">
               <span class="input-group-text">$</span>
+              <!-- <img src="images/icon-dollar.svg" alt=""> -->
+
               <input
                 type="text"
                 class="bill-amount form-control"
                 aria-label="bill amount"
                 placeholder="total bill amount"
+                
               />
               <!-- <span class="input-group-text">.00</span> -->
             </div>
             <!-- PERCENTAGE BUTTONS -->
             <div class="row">
-              <p>Select Tip %</p>
+              <p class="section-name">Select Tip %</p>
             </div>
             <div class="row row-cols-2 row-cols-md-3">
               <div class="col">
@@ -100,9 +108,10 @@
               </div>
               <div class="col">
                  <button
+                 disabled
                   value=".00"
                   type="button"
-                  class="percentage-button btn btn-primary col-12 mb-2"
+                  class=" dcustom-button percentage-button btn btn-primary col-12 mb-2"
                 >
                   Custom
                 </button>
@@ -119,7 +128,7 @@
 
               
             <!-- NUMBER OF PEOPLE LABEL -->
-            <label for="Number of People" class="form-label"
+            <label for="Number of People" class=" section-name form-label mt-3"
               >Number of People</label>
             <div class="input-group mb-3">
               <input
@@ -139,25 +148,25 @@
               <div class="row tip-display-row mt-4">
                 <div class="col-6 mb-4">
                   <p>Tip Amount</p>
-                  <small class="per-person">/ person</small>
+                  <small>/ person</small>
                 </div>
               <div class="col-6 mb-4">
-                <span class="display" id="showTipPerPerson">Lorem, ipsum.</span>
+                <span class="display" id="showTipPerPerson">$0.00</span>
               </div>
               <div class="row tip-display-row mt-2">
                 <div class="col-6 mb-4">
                   <p>Total</p>
-                  <small class="per-person">/ person</small>
+                  <small>/ person</small>
                 </div>
                 <div class="col-6 mb-4">
                   <span class="display" id="showTotalPerPerson"
-                    >Lorem, ipsum.</span
+                    >$0.00</span
                   >
                 </div>
               </div>
             </div>
             <!-- call to action button -->
-            <button type="button" class=" reset-btn btn btn-primary mt-5 col-md-12">Reset</button>
+            <button type="button" class=" reset-btn btn btn-primary mt-5 col-12">Reset</button>
           </section>
         </div>
       </div>
