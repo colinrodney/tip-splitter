@@ -10,6 +10,12 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+/* h1 element container 2 separate spans shown as block lvl elements */
+span.app-title {
+  display: block;
+  color: hsl(184, 14%, 56%);
+  text-transform: uppercase;
+}
 /* main container */
 .main-content {
   background: hsl(189, 41%, 97%);
@@ -27,12 +33,12 @@ body {
 }
 
 #bill {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 1rem;
 }
 
 #number-of-people {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   /* background: #424246; */
   color: #f1f1f1;
   padding: 1rem;
