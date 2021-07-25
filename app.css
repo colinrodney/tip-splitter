@@ -95,3 +95,11 @@ small {
   color: hsl(169, 55%, 62%, 1);
   font-size: 1.5rem;
 }
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+  #app-usage {
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+}

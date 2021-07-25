@@ -33,16 +33,6 @@
 
     <title>Splitter | C. Renauld Rodney</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
   </head>
   <!-- CORRECTED LAYOUT -->
   <body>
@@ -50,17 +40,36 @@
       <span class="app-title">spli</span>
       <span class="app-title">tter</span>
     </h1>
-    <main class="container main-content mt-3">
+    <div id="app-usage" class="px-2">
+      <p class="text-center">How to use this app:</p>
+        <ol>
+          <li class="mb-3">Enter the total bill amount.</li>
+          <li class="mb-3">Select the percentage of tip to be added to the total bill amount.</li>
+          <li class="mb-3">Enter the number of people splitting the total bill.</li>
+          <li class="mb-3">See totals displayed below...</li>
+          <li>Use "RESET" button to clear all entries.</li>
+          <!-- <li>Tip Amount / person:
+          shows dollar amount of tip each person to be paid by each person splitting bill.
+          <p>formula: 
+          Tip Amount per person = total-bill-amount * 0.xx<--(selected tip %)</p></li>
+          <li>Shows total bill amount with selected tip added to be paid by each person splitting bill
+            <p>formula:
+          Total per person = (total-bill-amount * 0.xx + total-bill-amount) / number-of-people-splitting-bill</p>
+          </li> -->
+        </ol>
+    </div>
+    <div class="container main-content mt-3">
       <!-- BOX-1 [Bill Amount + Select Tip] -->
       <div class="row">
         <div class="col-md-6">
-          <section id="bill">
+          <div id="bill-section">
             <label for="Bill" class="section-name form-label">Bill</label>
             <div class="input-group mb-4">
               <span class="input-group-text">$</span>
               <!-- <img src="images/icon-dollar.svg" alt=""> -->
 
               <input
+                id="Bill"
                 type="text"
                 class="bill-amount form-control"
                 aria-label="bill amount"
@@ -131,7 +140,7 @@
 
               
             <!-- NUMBER OF PEOPLE LABEL -->
-            <label for="Number of People" class=" section-name form-label mt-3"
+            <label class=" section-name form-label mt-3"
               >Number of People</label>
             <div class="input-group mb-3">
               <input
@@ -141,11 +150,11 @@
               />
             </div>
             
-          </section>
+          </div>
         </div>
         <!-- BOX-2 [Number of People + Display Totals + Call-to-Action (Reset Button)] -->
         <div class="col-md-6">
-          <section id="number-of-people" class="h-100 mt-1">
+          <div id="number-of-people" class="h-100 mt-1">
             <!-- TIP DISPLAY SECTION -->
             <div class="tip-display-wrapper">
               <div class="row tip-display-row mt-4">
@@ -170,12 +179,10 @@
             </div>
             <!-- call to action button -->
             <button type="button" class=" reset-btn btn btn-primary mt-5 col-12">Reset</button>
-          </section>
+          </div>
         </div>
       </div>
-    </main>
-    <!-- END CORRECTED LAYOUT  -->
-
+    </div>
     <!-- ATTRIBUTES-->
     <div class="attribution text-center mt-3 py-3">
       Challenge by
@@ -183,6 +190,8 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://colinrodney.netlify.app" target="_blank">C. Renauld Rodney</a>.
     </div>
+    <!-- END CORRECTED LAYOUT  -->
+
 
     <script src="app.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script>
