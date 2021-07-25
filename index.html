@@ -33,16 +33,6 @@
 
     <title>Splitter | C. Renauld Rodney</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
   </head>
   <!-- CORRECTED LAYOUT -->
   <body>
@@ -50,6 +40,24 @@
       <span class="app-title">spli</span>
       <span class="app-title">tter</span>
     </h1>
+    <div id="app-usage" class="px-2">
+      <p class="text-center">How to use this app:</p>
+        <ol>
+          <li class="mb-3">Enter the total bill amount.</li>
+          <li class="mb-3">Select the percentage of tip to be added to the total bill amount.</li>
+          <li class="mb-3">Enter the number of people splitting the total bill.</li>
+          <li class="mb-3">See totals displayed below...</li>
+          <li>Use "RESET" button to clear all entries.</li>
+          <!-- <li>Tip Amount / person:
+          shows dollar amount of tip each person to be paid by each person splitting bill.
+          <p>formula: 
+          Tip Amount per person = total-bill-amount * 0.xx<--(selected tip %)</p></li>
+          <li>Shows total bill amount with selected tip added to be paid by each person splitting bill
+            <p>formula:
+          Total per person = (total-bill-amount * 0.xx + total-bill-amount) / number-of-people-splitting-bill</p>
+          </li> -->
+        </ol>
+    </div>
     <div class="container main-content mt-3">
       <!-- BOX-1 [Bill Amount + Select Tip] -->
       <div class="row">
