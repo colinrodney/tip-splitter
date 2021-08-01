@@ -6,14 +6,8 @@ console.log(INPUT[0]); // bill Amount
 console.log(INPUT[1]); // Number of People
 
 // DOM ELEMENTS - buttons [all buttons]
-const PERCENTAGE = document.querySelectorAll(".percentage-button");
+const PERCENTAGE = document.querySelectorAll(".percentage-button"); // INCLUDES CUSTOM INPUT BUTTON
 const RESET = document.querySelector(".reset-btn");
-
-// RESET.addEventListener("click", function () {
-//   console.log("reset button triggered");
-// });
-console.log("RESET BUTTON", RESET);
-console.log(PERCENTAGE);
 
 // DOM ELEMENT - span[all spans]
 const SPAN = document.querySelectorAll(".display");
