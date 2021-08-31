@@ -13,7 +13,8 @@ body {
 /* h1 element container 2 separate spans shown as block lvl elements */
 span.app-title {
   display: block;
-  color: hsl(184, 14%, 56%);
+  /* color: hsl(184, 14%, 56%); */
+  color: hsl(186, 14%, 43%);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.5rem;
