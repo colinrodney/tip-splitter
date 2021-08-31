@@ -26,7 +26,12 @@ span.app-title {
 
 /* input fields (class="form-control") */
 .form-control {
-  background: hsl(186, 41%, 97%);
+  background-color: hsl(186, 41%, 97%);
+  text-align: right;
+}
+
+.form-control::placeholder {
+  text-align: right;
 }
 
 /* .section-name (labels + paragraph elements) */
@@ -34,12 +39,24 @@ span.app-title {
   color: hsl(185, 14%, 56%);
 }
 
+/* BILL SECTION */
 #bill-section {
   /* border: 2px solid red; */
   padding: 1rem;
 }
 
-#number-of-people {
+.bill-amount {
+  background: url("images/icon-dollar.svg") no-repeat left;
+  /* position: relative;
+  left: 10px; */
+}
+
+.number-of-people {
+  background: url("images/icon-person.svg") no-repeat left;
+}
+
+/* SHOW TOTALS SECTION */
+#showTotals {
   /* border: 2px solid purple; */
   /* background: #424246; */
   color: #f1f1f1;
