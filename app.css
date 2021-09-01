@@ -20,6 +20,11 @@ span.app-title {
   font-weight: 700;
   letter-spacing: 0.5rem;
 }
+/* <ol> styling */
+#instructions {
+  width: 50%;
+  margin: 1rem auto;
+}
 
 /* MAIN CONTENT */
 .main-content {
