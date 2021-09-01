@@ -37,29 +37,21 @@
   <!-- CORRECTED LAYOUT -->
   <body>
     <header>
+      <!-- APP NAME -->
       <h1 class="text-center mt-5 mb-3">
         <span class="app-title">spli</span>
         <span class="app-title">tter</span>
       </h1>
-    </header>
-    <section id="instructions" class="px-2">
+      <!-- INSTRUCTIONS... -->
       <h2 class="text-center">Instructions</h2>
-        <ol>
-          <li class="mb-3">Enter the total bill amount.</li>
-          <li class="mb-3">Select the percentage of tip to be added to the total bill amount.</li>
-          <li class="mb-3">Enter the number of people splitting the total bill.</li>
-          <li class="mb-3">See totals displayed below...</li>
-          <li>Use "RESET" button to clear all entries.</li>
-          <!-- <li>Tip Amount / person:
-          shows dollar amount of tip each person to be paid by each person splitting bill.
-          <p>formula: 
-          Tip Amount per person = total-bill-amount * 0.xx<--(selected tip %)</p></li>
-          <li>Shows total bill amount with selected tip added to be paid by each person splitting bill
-            <p>formula:
-          Total per person = (total-bill-amount * 0.xx + total-bill-amount) / number-of-people-splitting-bill</p>
-          </li> -->
+        <ol id="instructions" class="px-2">
+          <li class="mb-3">Enter total bill amount.</li>
+          <li class="mb-3">Select percentage of tip to be added to total bill.</li>
+          <li class="mb-3">Enter number of people splitting bill.</li>
+          <li class="mb-3">Totals displayed below, "RESET" Button to refresh app</li>
         </ol>
-    </section>
+    </header>
+    <!-- MAIN CONTENT -->
     <main class="container main-content my-4">
       <!-- BOX-1 [Bill Amount + Select Tip] -->
       <div class="row">
@@ -67,9 +59,7 @@
           <div id="bill-section">
             <label for="Bill" class="section-name form-label">Bill</label>
             <div class="input-group mb-4">
-              <!-- <span class="input-group-text">$</span> -->
-              
-              <!-- <img src="images/icon-dollar.svg" alt=""> -->
+             
 
               <input
                 id="Bill"
@@ -79,7 +69,7 @@
                 placeholder="total bill amount"
                 
               />
-              <!-- <span class="input-group-text">.00</span> -->
+              
             </div>
             <!-- PERCENTAGE BUTTONS -->
             <div class="row">
@@ -130,13 +120,7 @@
                 Custom
               </button>
                 
-                 <!-- <button
-                  value=".00"
-                  type="button"
-                  class="custom-button percentage-button btn btn-primary col-12 mb-2"
-                >
-                  Custom
-                </button> -->
+                
                 <!--END: CUSTOM BUTTON -->
               </div>
               <div class="col">
@@ -164,9 +148,9 @@
           </div>
         </div>
         <!-- BOX-2 [Number of People + Display Totals + Call-to-Action (Reset Button)] -->
+        <!-- SHOW TOTALS SECTION -->
         <div class="col-md-6">
           <div id="showTotals" class="h-100 mt-1">
-            <!-- TIP DISPLAY SECTION -->
             <div class="tip-display-wrapper">
               <div class="row tip-display-row mt-4">
                 <div class="col-6 mb-4">
@@ -188,13 +172,13 @@
                 </div>
               </div>
             </div>
-            <!-- call to action button -->
+            <!-- RESET BUTTON -->
             <button type="button" class=" reset-btn btn btn-primary mt-5 col-12">Reset</button>
           </div>
         </div>
       </div>
     </main>
-    <!-- ATTRIBUTES-->
+    <!-- FOOTER w/ ATTRIBUTES-->
     <footer class="attribution text-center mt-3 py-3">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

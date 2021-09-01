@@ -10,6 +10,7 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+/* HEADER */
 /* h1 element container 2 separate spans shown as block lvl elements */
 span.app-title {
   display: block;
@@ -19,7 +20,8 @@ span.app-title {
   font-weight: 700;
   letter-spacing: 0.5rem;
 }
-/* main container */
+
+/* MAIN CONTENT */
 .main-content {
   background: hsl(189, 41%, 97%);
   border-radius: 20px;
@@ -93,7 +95,7 @@ small {
   color: hsl(183, 100%, 15%);
 }
 
-/* reset button */
+/* RESET BUTTON */
 .reset-btn {
   background: hsl(175deg 65% 41%);
   color: hsl(183, 100%, 15%);
