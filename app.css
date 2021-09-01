@@ -39,6 +39,7 @@ span.app-title {
 }
 
 .form-control::placeholder {
+  /* align placeholder text @ input field */
   text-align: right;
 }
 
@@ -49,14 +50,11 @@ span.app-title {
 
 /* BILL SECTION */
 #bill-section {
-  /* border: 2px solid red; */
   padding: 1rem;
 }
 
 .bill-amount {
   background: url("images/icon-dollar.svg") no-repeat left;
-  /* position: relative;
-  left: 10px; */
 }
 
 .number-of-people {
@@ -65,8 +63,6 @@ span.app-title {
 
 /* SHOW TOTALS SECTION */
 #showTotals {
-  /* border: 2px solid purple; */
-  /* background: #424246; */
   color: #f1f1f1;
   padding: 1rem;
 }
@@ -74,7 +70,7 @@ span.app-title {
 .tip-display-wrapper {
   background: #d6d5d5;
   background: hsl(183, 100%, 15%);
-  /* color: #000; */
+
   color: hsl(189, 41%, 97%);
   padding: 1rem;
   border-radius: 20px;
@@ -104,8 +100,7 @@ small {
 .reset-btn {
   background: hsl(175deg 65% 41%);
   color: hsl(183, 100%, 15%);
-  /* display: block;
-  margin: 0 auto; */
+
   text-transform: uppercase;
   font-weight: 700;
 }
